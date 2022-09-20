@@ -724,7 +724,7 @@
     }
 
     .nav_btns{
-        margin-right: var(--mb-1)
+        margin-right: var(--mb-2);
     }
 
     .about_container,
