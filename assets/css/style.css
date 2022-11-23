@@ -20,6 +20,30 @@
     align-items: center;
 }
 
+.languange-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.languange{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5rem;
+}
+
+.pt-br.selected-languange{
+    padding: 2px 0px 1px 2px;
+    border: 1px solid var(--first-color);
+}
+
+.en-usa.selected-languange{
+    padding: 2px 2px 2px 2px;
+    border: 1px solid var(--first-color);
+}
+
 .change-theme{
     font-size: 1.25rem;
     color: var(--title-color);

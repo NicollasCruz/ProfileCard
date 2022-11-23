@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="assets/js/texts.js"></script>
+
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -12,12 +14,22 @@
 
     <title>Portifólio - Nicollas</title>
 </head>
-<body>
+<body onload="loadText(0)">
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav_logo">Nicollas</a>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <div class="languange">
+                            <div class="pt-br languange-item selected-languange" onclick="selectPt()">
+                                <img src="./assets/images/brazil.svg" alt="PT-BR" width="30px">
+                            </div>
+                            <div class="en-usa languange-item" onclick="selectEn()">
+                                <img src="./assets/images/Flag_of_the_United_States.svg" alt="PT-BR" width="30px">
+                            </div>
+                        </div>
+                    </li>
                     <li class="nav_item">
                         <a href="#home" class="nav_link active-link">
                             <i class="uil uil-estate nav_icon"></i>
@@ -27,25 +39,25 @@
                     <li class="nav_item">
                         <a href="#about" class="nav_link">
                             <i class="uil uil-user nav_icon"></i>
-                            Sobre
+                            <p id="header_2"></p>
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#skills" class="nav_link">
                             <i class="uil uil-file-alt nav_icon"></i>
-                            Habilidades
+                            <p id="header_3"></p>
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#services" class="nav_link">
                             <i class="uil uil-briefcase-alt nav_icon"></i>
-                            Serviços
+                            <p id="header_4"></p>
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#contactme" class="nav_link">
                             <i class="uil uil-message nav_icon"></i>
-                            Contato
+                            <p id="header_5"></p>
                         </a>
                     </li>
                 </ul>
@@ -103,7 +115,7 @@
                             Desenvolvedor web júnior com experiência em algoritmos, clean code e matedologias ágeis.
                         </p>
                         <a href="#contactme" class="button button--flex">
-                            Contate-me <i class="uil uil-message button_icon"></i>
+                            <p class="home_btn"></p> <i class="uil uil-message button_icon"></i>
                         </a>
                     </div>
                 </div>
@@ -118,8 +130,8 @@
         </section>
 
         <section class="about section" id="about">
-            <h2 class="section_title">Sobre Mim</h2>
-            <span class="section_subtitle">Minha apresentação</span>
+            <h2 class="section_title about_title">Sobre Mim</h2>
+            <span class="section_subtitle about_subtitle">Minha apresentação</span>
             <div class="about_container container grid">
                 <img src="assets/images/oclin.jpg" alt="imagem sobre mim" class="about_img">
                 <div class="about_data">
@@ -130,20 +142,20 @@
                     <div class="about_info">
                         <div>
                             <span class="about_info-title">02+</span>
-                            <span class="about_info-name">Anos <br> de experiência</span>
+                            <span class="about_info-name about_info_1">Anos <br> de experiência</span>
                         </div>
                         <div>
                             <span class="about_info-title">5+</span>
-                            <span class="about_info-name">Projetos reais <br> em que atuei</span>
+                            <span class="about_info-name about_info_2">Projetos reais <br> em que atuei</span>
                         </div>
                         <div>
                             <span class="about_info-title">02</span>
-                            <span class="about_info-name">Empresas <br> em que trabalhei</span>
+                            <span class="about_info-name about_info_3">Empresas <br> em que trabalhei</span>
                         </div>
                     </div>
                     <div class="about_buttons">
                         <a download="" href="assets/pdf/Curriculo-Nicollas.pdf" class="button button--flex">
-                            Baixar CV<i class="uil uil-download-alt button_icon"></i>
+                            <p class="about_cv"></p><i class="uil uil-download-alt button_icon"></i>
                         </a>
                     </div>
                 </div>
@@ -151,16 +163,16 @@
         </section>
 
         <section class="skills section" id="skills">
-            <h2 class="section_title">Habilidades</h2>
-            <span class="section_subtitle">Meu nível técnico</span>
+            <h2 class="section_title skills_title_1">Habilidades</h2>
+            <span class="section_subtitle skills_subtitle_1">Meu nível técnico</span>
             <div class="skills_container container grid">
                 <div>
                     <div class="skills_content skills_open">
                         <div class="skills_header">
                             <i class="uil uil-brackets-curly skills_icon"></i>
                             <div>
-                                <h1 class="skills_title">Frontend</h1>
-                                <span class="skills_subtitle">Mais de 2 anos</span>
+                                <h1 class="skills_title skills_info_title_1">Frontend</h1>
+                                <span class="skills_subtitle skills_info_subtitle_1">Mais de 2 anos</span>
                             </div>
                             <i class="uil uil-angle-down skills_arrow"></i>
                         </div>
@@ -218,8 +230,8 @@
                         <div class="skills_header">
                             <i class="uil uil-server-network skills_icon"></i>
                             <div>
-                                <h1 class="skills_title">Backend</h1>
-                                <span class="skills_subtitle">Mais de 2 anos</span>
+                                <h1 class="skills_title skills_info_title_2">Backend</h1>
+                                <span class="skills_subtitle skills_info_subtitle_2">Mais de 2 anos</span>
                             </div>
                             <i class="uil uil-angle-down skills_arrow"></i>
                         </div>
@@ -268,8 +280,8 @@
                         <div class="skills_header">
                             <i class="uil uil-chat skills_icon"></i>
                             <div>
-                                <h1 class="skills_title">Idiomas</h1>
-                                <span class="skills_subtitle">Mais de 10 anos</span>
+                                <h1 class="skills_title skills_info_title_3">Idiomas</h1>
+                                <span class="skills_subtitle skills_info_subtitle_3">Mais de 10 anos</span>
                             </div>
                             <i class="uil uil-angle-down skills_arrow"></i>
                         </div>
@@ -317,26 +329,26 @@
         </section>
 
         <section class="qualification section" id="qualification">
-            <h2 class="section_title">Qualificações</h2>
-            <span class="section_subtitle">Minha jornada</span>
+            <h2 class="section_title qualidication_title_1">Qualificações</h2>
+            <span class="section_subtitle qualification_subtitle_1">Minha jornada</span>
 
             <div class="qualification_container container">
                 <div class="qualification_tabs">
                     <div class="qualification_button button--flex qualification_active" data-target="#education">
                         <i class="uil uil-graduation-cap qualification_icon"></i>
-                        Educação
+                        <p class="qualification_info_1"></p>
                     </div>
                     <div class="qualification_button button--flex" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification_icon"></i>
-                        Trabalho
+                        <p class="qualification_info_2"></p>
                     </div>
                 </div>
                 <div class="qualification_sections">
                     <div class="qualification_content qualification_active" data-content id="education">
                         <div class="qualification_data">
                             <div>
-                                <h3 class="qualification_title">Médio técnico em informática</h3>
-                                <span class="qualification_subtitle">Brasil - CEFET/RJ</span>
+                                <h3 class="qualification_title qualification_info_title_1">Médio técnico em informática</h3>
+                                <span class="qualification_subtitle qualification_info_subtitle_1">Brasil - CEFET/RJ</span>
                                 <div class="qualification_calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2018 - 2020
@@ -353,11 +365,11 @@
                                 <span class="qualification_rounder"></span>
                             </div>
                             <div>
-                                <h3 class="qualification_title">Sisitemas de informação</h3>
-                                <span class="qualification_subtitle">Brasil - CEFET/RJ</span>
+                                <h3 class="qualification_title qualification_info_title_2">Sisitemas de informação</h3>
+                                <span class="qualification_subtitle qualification_info_subtitle_2">Brasil - CEFET/RJ</span>
                                 <div class="qualification_calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2020 - Cursando
+                                    <p class="qualification_time"></p>
                                 </div>
                             </div>
                         </div>
@@ -365,8 +377,8 @@
                     <div class="qualification_content" data-content id="work">
                         <div class="qualification_data">
                             <div>
-                                <h3 class="qualification_title">Desenvolvedor Bolsista</h3>
-                                <span class="qualification_subtitle">Brasil - CEFET/RJ - GEPICES</span>
+                                <h3 class="qualification_title qualification_info_title_3">Desenvolvedor Bolsista</h3>
+                                <span class="qualification_subtitle qualification_info_subtitle_3">Brasil - CEFET/RJ - GEPICES</span>
                                 <div class="qualification_calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2019 -2020
@@ -384,8 +396,8 @@
                                 <span class="qualification_line"></span>
                             </div>
                             <div>
-                                <h3 class="qualification_title">Estágiário > Dev. Trainee</h3>
-                                <span class="qualification_subtitle">BendingBits - Revendus</span>
+                                <h3 class="qualification_title qualification_info_title_4">Estágiário > Dev. Trainee</h3>
+                                <span class="qualification_subtitle qualification_info_subtitle_4">BendingBits - Revendus</span>
                                 <div class="qualification_calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2021 - 2022
@@ -394,11 +406,11 @@
                         </div>
                         <div class="qualification_data">
                             <div>
-                                <h3 class="qualification_title">Dev. Trainee > Dev. Junior</h3>
-                                <span class="qualification_subtitle">Viceri Seidor</span>
+                                <h3 class="qualification_title qualification_info_title_5">Dev. Trainee > Dev. Junior</h3>
+                                <span class="qualification_subtitle qualification_info_subtitle_5">Viceri Seidor</span>
                                 <div class="qualification_calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2022 - Trabalho Atual
+                                    <p class="qualification_time_2"></p>
                                 </div>
                             </div>
                             <div>
@@ -411,33 +423,33 @@
         </section>
 
         <section class="services section" id="services">
-            <h2 class="section_title">Serviços</h2>
-            <span class="section_subtitle">O que eu ofereço</span>
+            <h2 class="section_title services_title_1">Serviços</h2>
+            <span class="section_subtitle services_subtitle_1">O que eu ofereço</span>
             <div class="services_container container grid">
                 <div class="services_content">
                     <div>
                         <i class="uil uil-brackets-curly services_icon"></i>
-                        <h3 class="services_title">Desenvolvimento <br> FrontEnd</h3>
-                        <span class="button button--flex button--small button--link services_button">
+                        <h3 class="services_title services_frontend_title">Desenvolvimento <br> FrontEnd</h3>
+                        <span class="button button--flex button--small button--link services_button services_btn">
                             Ver Mais
                             <i class="uil uil-arrow-right services_icon"></i>
                         </span>
                         <div class="services_modal">
                             <div class="services_modal-content">
-                                <h4 class="services_modal-title">Desenvolvimento <br> FrontEnd</h4>
+                                <h4 class="services_modal-title services_frontend_title_modal">Desenvolvimento <br> FrontEnd</h4>
                                 <i class="uil uil-times services_modal-close"></i>
                                 <ul class="services_modal-services grid">
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Criar e replicar telas</p>
+                                        <p class="services_front_item_1">Criar e replicar telas</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Desenho de UI</p>
+                                        <p class="services_front_item_2">Desenho de UI</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Lógica de Js para interações e requisições</p>
+                                        <p class="services_front_item_3">Lógica de Js para interações e requisições</p>
                                     </li>
                                 </ul>
                             </div>
@@ -447,31 +459,31 @@
                 <div class="services_content">
                     <div>
                         <i class="uil uil-server-network services_icon"></i>
-                        <h3 class="services_title">Desenvolvimento <br> Backend</h3>
-                        <span class="button button--flex button--small button--link services_button">
+                        <h3 class="services_title services_backend_title">Desenvolvimento <br> Backend</h3>
+                        <span class="button button--flex button--small button--link services_button services_btn">
                             Ver Mais
                             <i class="uil uil-arrow-right services_icon"></i>
                         </span>
                         <div class="services_modal">
                             <div class="services_modal-content">
-                                <h4 class="services_modal-title">Desenvolvimento <br> Backend</h4>
+                                <h4 class="services_modal-title services_backend_title_modal">Desenvolvimento <br> Backend</h4>
                                 <i class="uil uil-times services_modal-close"></i>
                                 <ul class="services_modal-services grid">
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Criar APIs REST</p>
+                                        <p class="services_back_item_1">Criar APIs REST</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Algoritimos de qualidade</p>
+                                        <p class="services_back_item_2">Algoritimos de qualidade</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Testes unitários</p>
+                                        <p class="services_back_item_3">Testes unitários</p>
                                     </li>
                                     <li class="services_modal-service">
                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Consultas de banco de dados / Procedures</p>
+                                        <p class="services_back_item_4">Consultas de banco de dados / Procedures</p>
                                     </li>
                                 </ul>
                             </div>
@@ -482,29 +494,29 @@
         </section>
 
         <section class="contactme section" id="contactme">
-            <h2 class="section_title">Contate-me</h2>
-            <span class="section_subtitle">Entre em contato</span>
+            <h2 class="section_title contact_title_1">Contate-me</h2>
+            <span class="section_subtitle contact_subtitle_1">Entre em contato</span>
 
             <div class="contact_container container grid">
                 <div>
                     <div class="contact_information">
                         <i class="uil uil-phone contact_icon"></i>
                         <div>
-                            <h3 class="contact_title">Telefone</h3>
+                            <h3 class="contact_title contact_item_1">Telefone</h3>
                             <span class="contact_subtitle">(22) 99284-2266</span>
                         </div>
                     </div>
                     <div class="contact_information">
                         <i class="uil uil-envelope contact_icon"></i>
                         <div>
-                            <h3 class="contact_title">Email</h3>
+                            <h3 class="contact_title contact_item_2">Email</h3>
                             <span class="contact_subtitle">nicollaslopes2903@gmail.com</span>
                         </div>
                     </div>
                     <div class="contact_information">
                         <i class="uil uil-map-marker contact_icon"></i>
                         <div>
-                            <h3 class="contact_title">Localização</h3>
+                            <h3 class="contact_title contact_item_3">Localização</h3>
                             <span class="contact_subtitle">Nova Friburgo - RJ</span>
                         </div>
                     </div>
@@ -512,25 +524,25 @@
                 <form action="" class="contact_form grid">
                     <div class="contact_inputs grid">
                         <div class="contact_content">
-                            <label for="" class="contact_label">Nome</label>
+                            <label for="" class="contact_label contact_label_1">Nome</label>
                             <input type="text" class="contact_input">
                         </div>
                         <div class="contact_content">
-                            <label for="" class="contact_label">Email</label>
+                            <label for="" class="contact_label contact_label_2">Email</label>
                             <input type="email" class="contact_input">
                         </div>
                     </div>
                     <div class="contact_content">
-                        <label for="" class="contact_label">Projeto</label>
+                        <label for="" class="contact_label contact_label_3">Projeto</label>
                         <input type="text" class="contact_input">
                     </div>
                     <div class="contact_content">
-                        <label for="" class="contact_label">Mensagem</label>
+                        <label for="" class="contact_label contact_label_4">Mensagem</label>
                         <textarea cols="0" rows="7" class="contact_input"></textarea>
                     </div>
                     <div>
                         <a href="#" class="button button--flex">
-                            Enviar Mensagem 
+                            <p class="contact_btn"></p> 
                             <i class="uil uil-message button_icon"></i>
                         </a>
                     </div>
@@ -548,13 +560,13 @@
                 </div>
                 <ul class="footer_links">
                     <li>
-                        <a href="#services" class="footer_link">Serviçoes</a>
+                        <a href="#services" class="footer_link footer_link_1">Serviçoes</a>
                     </li>
                     <li>
-                        <a href="#portifolio" class="footer_link">Portifólio</a>
+                        <a href="#portifolio" class="footer_link footer_link_2">Portifólio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer_link">Contato</a>
+                        <a href="#contact" class="footer_link footer_link_3">Contato</a>
                     </li>
                 </ul>
                 <div class="footer_socials">
