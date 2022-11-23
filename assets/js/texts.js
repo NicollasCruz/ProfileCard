@@ -152,11 +152,6 @@ function loadText(x)
     document.querySelector('.contact_item_1').innerHTML = contact_item_1[x];
     document.querySelector('.contact_item_2').innerHTML = contact_item_2[x];
     document.querySelector('.contact_item_3').innerHTML = contact_item_3[x];
-    document.querySelector('.contact_label_1').innerHTML = contact_label_1[x];
-    document.querySelector('.contact_label_2').innerHTML = contact_label_2[x];
-    document.querySelector('.contact_label_3').innerHTML = contact_label_3[x];
-    document.querySelector('.contact_label_4').innerHTML = contact_label_4[x];
-    document.querySelector('.contact_btn').innerHTML = contact_btn[x];
 
     //Footer
     document.querySelector('.footer_subtitle').innerHTML = footer_subtitle[x];

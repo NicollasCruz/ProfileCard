@@ -168,6 +168,7 @@
 .home_title{
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-0-75);
+    line-height: 1.5;
 }
 
 .home_subtitle{
