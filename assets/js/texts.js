@@ -5,7 +5,7 @@ const header_5 = ["Contato", "Contact"];
 
 const home_title = ["Olá, sou Nicollas!!!", "Hi, my name is Nicollas!!!"];
 const home_subtitle = ["Desenvolvedor FullStack.", "FullStack Developer."];
-const home_description = ["Desenvolvedor web júnior com experiência em algoritmos, clean code e matedologias ágeis.", "Junior Web Developer with experience in algorithms, clean code and fast methods."];
+const home_description = ["Desenvolvedor web júnior com experiência em algoritmos, clean code e matedologias ágeis.", "Junior Web Developer with experience in algorithms, clean code and agile methodology."];
 const home_btn = ["Contate-me", "Contact-me"];
 const home_scroll = ["Rolar para baixo", "Scroll down"];
 
@@ -23,9 +23,9 @@ const about_cv = ["Baixar CV", "Download resume"];
 
 const skills_title_1 = ["Habilidades", "Skills"];
 const skills_subtitle_1 = ["Meu nível técnico", "My technical level"];
-const skills_info_title_1 = ["Frontend", "Frontend"];
+const skills_info_title_1 = ["Front-end", "Front-end"];
 const skills_info_subtitle_1 = ["Mais de 2 anos", "More than 2 years"];
-const skills_info_title_2 = ["Backend", "Backend"];
+const skills_info_title_2 = ["Back-end", "Back-end"];
 const skills_info_subtitle_2 = ["Mais de 2 anos", "More than 2 years"];
 const skills_info_title_3 = ["Idiomas", "Languanges"];
 const skills_info_subtitle_3 = ["Mais de 10 anos", "More than 10 years"];
@@ -47,13 +47,13 @@ const qualification_time_2 = ["2022 - Trabalho atual", "2022 - Current Job"];
 
 const services_title_1 = ["Serviços", "Services"];
 const services_subtitle_1 = ["O que eu ofereço", "What do I offer"];
-const services_frontend_title = ["Desenvolvimento <br> FrontEnd", "FrontEnd <br> Development"];
-const services_frontend_title_modal = ["Desenvolvimento <br> FrontEnd", "FrontEnd <br> Development"];
+const services_frontend_title = ["Desenvolvimento <br> Front-end", "Front-end <br> Development"];
+const services_frontend_title_modal = ["Desenvolvimento <br> Front-end", "Front-end <br> Development"];
 const services_front_item_1 = ["Criar e replicar telas", "Create and reply screens"];
 const services_front_item_2 = ["Desenho de UI", "UI Design"];
 const services_front_item_3 = ["Lógica de Js para interações e requisições", "Js logics for interections and requisitions"];
-const services_backend_title = ["Desenvolvimento <br> Backend", "Backend <br> Development"];
-const services_backend_title_modal = ["Desenvolvimento <br> Backend", "Backend <br> Development"];
+const services_backend_title = ["Desenvolvimento <br> Back-end", "Back-end <br> Development"];
+const services_backend_title_modal = ["Desenvolvimento <br> Back-end", "Back-end <br> Development"];
 const services_back_item_1 = ["Criar APIs REST", "Create REST APIs"];
 const services_back_item_2 = ["Algoritimos de qualidade", "Quality algorithms"];
 const services_back_item_3 = ["Testes unitários", "Unit tests"];
@@ -70,7 +70,7 @@ const contact_label_3 = ["Projeto", "Project"];
 const contact_label_4 = ["Mensagem", "Message"];
 const contact_btn = ["Enviar mensagem", "Send Message"];
 
-const footer_subtitle = ["Desenvolvedor FullStack", "FullStack developer"];
+const footer_subtitle = ["Desenvolvedor Full stack", "Full stack developer"];
 const footer_link_1 = ["Serviços", "Services"];
 const footer_link_2 = ["Portifólio", "Portfolio"];
 const footer_link_3 = ["Contato", "Contact"];
